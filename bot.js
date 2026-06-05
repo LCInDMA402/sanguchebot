@@ -136,3 +136,4 @@ socket.on("talk", (message) => {
         sendMsg("IT'S A FUCKING [[fVk]]");
     }, 1000);
  }
+});
