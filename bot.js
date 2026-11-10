@@ -15,15 +15,15 @@ socket.emit("login", {
 setup();
 
 const help = `- %%^^COMMANDS:^^%% \n` +
-`${prefix}help\n ${prefix}help2`;
+`${prefix}help\\n ${prefix}help2`;
 
 const help1 = `- %%^^COMMANDS:^^%% \n` +
-`${prefix}help1\n ${prefix}echo\n ${prefix}joke\n ${prefix}triggered\n ${prefix}fact\n ${prefix}hat\n ${prefix}color\n ${prefix}name\n ${prefix}resethat\n ${prefix}resetcolor\n ${prefix}resetname\n ${prefix}ship\n ${prefix}roast\n ${prefix}cow\n ${prefix}llama\n ${prefix}parrot\n ${prefix}source\n ${prefix}changelog\n ${prefix}france\n ${prefix}asshole\n ${prefix}lumi\n ${prefix}gokid\n ${prefix}backflip`;
+`${prefix}help1\\n ${prefix}echo\\n ${prefix}joke\\n ${prefix}triggered\\n ${prefix}fact\\n ${prefix}hat\\n ${prefix}color\\n ${prefix}name\\n ${prefix}resethat\\n ${prefix}resetcolor\\n ${prefix}resetname\\n ${prefix}ship\\n ${prefix}roast\\n ${prefix}cow\\n ${prefix}llama\\n ${prefix}parrot\\n ${prefix}source\\n ${prefix}changelog\\n ${prefix}france\\n ${prefix}asshole\\n ${prefix}lumi\\n ${prefix}gokid (disowned)\\n ${prefix}backflip`;
 
 const help2 = `- %%^^COMMANDS:^^%% \n` +
-`${prefix}help2\n ${prefix}pp\n ${prefix}aplle\n ${prefix}stfu\n ${prefix}fuk\n ${prefix}version\n ${prefix}coinflip\n ${prefix}restore\n ${prefix}repeat\n ${prefix}apllefy\n ${prefix}8ball\n ${prefix}uptime\n ${prefix}freepope\n ${prefix}poll\n ${prefix}ban`;
+`${prefix}help2\\n ${prefix}pp\\n ${prefix}aplle\\n ${prefix}stfu\\n ${prefix}fuk\\n ${prefix}version\\n ${prefix}coinflip\\n ${prefix}restore\\n ${prefix}repeat\\n ${prefix}apllefy\\n ${prefix}8ball\\n ${prefix}uptime\\n ${prefix}freepope\\n ${prefix}poll\\n ${prefix}kick`;
 
-const changelog = `- ^^**${version}**^^\n Added Clanker Dask commands and GUID ban`;
+const changelog = `- ^^**${version}**^^\n Added some new commands and GUID ban`;
 
 function sendMsg(msg) {
     setTimeout(() => {
