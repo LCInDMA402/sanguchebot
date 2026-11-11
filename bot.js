@@ -1,6 +1,6 @@
 const prefix = ".";
 const botname = "SangucheBot (" + prefix + "help)";
-const version = "V0.0.2";
+const version = "V0.0.3";
 const startTime = Date.now();
 
 let isPremium = false;
@@ -129,7 +129,7 @@ socket.on("talk", (message) => {
     if (text.startsWith(prefix + "kick")) {
 
         if (senderGUID !== hostID)
-            return sendMsg("Owner Only!");
+            return sendMsg("Owner Only");
 
         const parts = text.trim().split(/\s+/);
 
@@ -218,12 +218,12 @@ socket.on("talk", (message) => {
         const name = text.substring(prefix.length + 2).trim() || "Unknown";
 
         const pps = [
-            `This is ${name}'s PP: 8=Đ`,
-            `This is ${name}'s PP: 8==Đ`,
-            `This is ${name}'s PP: 8===Đ`,
-            `This is ${name}'s PP: 8====Đ`,
-            `This is ${name}'s PP: 8=====Đ`,
-            `This is ${name}'s PP: 8======Đ`
+            `This is ${name}'s PP: FUCK YOU`,
+            `This is ${name}'s PP: asdfasdf`,
+            `This is ${name}'s PP: bro`,
+            `This is ${name}'s PP: no`,
+            `This is ${name}'s PP: wtf`,
+            `This is ${name}'s PP: a`
         ];
 
         return sendMsg(pps[Math.floor(Math.random() * pps.length)]);
