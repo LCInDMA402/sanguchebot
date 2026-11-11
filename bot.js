@@ -1,6 +1,6 @@
 const prefix = ".";
 const botname = "SangucheBot (" + prefix + "help)";
-const version = "V0.0.3";
+const version = "V0.0.4";
 const startTime = Date.now();
 
 let isPremium = false;
@@ -23,7 +23,7 @@ const help1 = `- %%^^COMMANDS:^^%% \n` +
 const help2 = `- %%^^COMMANDS:^^%% \n` +
 `${prefix}help2\\n ${prefix}pp\\n ${prefix}aplle\\n ${prefix}stfu\\n ${prefix}fuk\\n ${prefix}version\\n ${prefix}coinflip\\n ${prefix}restore\\n ${prefix}repeat\\n ${prefix}apllefy\\n ${prefix}8ball\\n ${prefix}uptime\\n ${prefix}freepope\\n ${prefix}poll\\n ${prefix}kick`;
 
-const changelog = `- ^^**${version}**^^\n Added some new commands and GUID ban`;
+const changelog = `- ^^**${version}**^^\n Added some new commands\\n added .kick\\n fixed smth\\n fixed source code link`;
 
 function sendMsg(msg) {
     setTimeout(() => {
@@ -185,7 +185,7 @@ socket.on("talk", (message) => {
 
     // SOURCE
     if (text === prefix + "source")
-        return sendMsg("- ^^**SOURCE CODE:**^^\nhttps://LCInDMA402.github.io/sanguchebot/bot.js");
+        return sendMsg("- ^^**SOURCE CODE:**^^\\nLCInDMA402.github.io/sanguchebot/bot.js");
 
     // PARROT
     if (text === prefix + "parrot")
